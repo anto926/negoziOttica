@@ -1,0 +1,24 @@
+/*css chiara*/
+h4 {
+    text-align: center;
+}
+
+#carouselExampleDark {
+    width: 100%;
+}
+
+.card {
+    margin: auto;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    width: 60%;
+}
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: black;
+}
+
