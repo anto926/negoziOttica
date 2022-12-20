@@ -1,7 +1,4 @@
 /*css chiara*/
-h4 {
-    text-align: center;
-}
 
 #carouselExampleDark {
     width: 100%;
@@ -22,3 +19,221 @@ a:hover {
     color: black;
 }
 
+/*css Irene*/
+
+.card-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#barra {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.animazione {
+    transition: transform .2s ease-in-out;
+}
+
+.animazione:hover {
+    transform: scale(1.2);
+}
+
+.dropdown {
+    justify-self: center;
+}
+
+/*dan
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+section{
+padding : 0 100px;
+background-color: url(bg.jpg);
+height: 100vh;
+display: flex;
+align-items: center;
+}
+.box
+{
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.box h2{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #044460;
+}
+
+
+/*css Matteo su header*/
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.card-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#barra {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.animazione {
+    transition: transform .2s ease-in-out;
+}
+
+.animazione:hover {
+    transform: scale(1.2);
+}
+
+.dropdown {
+    justify-self: center;
+}
+
+/*dan
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+section{
+padding : 0 100px;
+background-color: url(bg.jpg);
+height: 100vh;
+display: flex;
+align-items: center;
+}
+.box
+{
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.box h2{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #044460;
+}
+*/
+
+/*css Luca*/
+
+body{
+    line-height: 1.5;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.footer{
+    background-color: rgb(100, 99, 99);
+    padding: 70px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.4s ease;
+}
+
+.footer-col ul li a:hover{ 
+    color:#ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.4s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
