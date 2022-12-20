@@ -16,9 +16,87 @@ h4 {
 
 a {
     color: grey;
+    text-decoration: none;
 }
 
 a:hover {
     color: black;
 }
+
+
+.box {
+    text-align: center;
+    width: 80%;
+    height: 95%;
+    padding: 8%;
+    background-color: lightgrey;
+    border-radius: 10%;
+    margin: auto;
+    transition: transform .2s; /* Animation */
+}
+
+.box2 {
+    text-align: center;
+    width: 80%;
+    height: 95%;
+    padding: 8%;
+    background-color: lightgrey;
+    border-radius: 10%;
+    margin: auto;
+    transition: transform .2s; /* Animation */
+}
+
+.box3 {
+    text-align: center;
+    width: 80%;
+    height: 95%;
+    padding: 8%;
+    background-color: lightgrey;
+    border-radius: 10%;
+    margin: auto;
+    transition: transform .2s; /* Animation */
+    
+}
+
+.box4 {
+    text-align: center;
+    width: 80%;
+    height: 95%;
+    padding: 8%;
+    background-color: lightgrey;
+    border-radius: 10%;
+    margin: auto;
+    transition: transform .2s; /* Animation */
+    
+}
+
+.box:hover {
+    transform: scale(1.1); 
+}
+
+.box2:hover {
+    transform: scale(1.1); 
+}
+
+.box3:hover {
+    transform: scale(1.1); 
+}
+
+.box4:hover {
+    transform: scale(1.1); 
+}
+
+#coupon {
+   margin-top: 5%;
+   padding: 5%;
+   background-image: url(../immagini/sfondonewsletter.jpg);
+   background-size: cover;
+   opacity: 0.6;
+}
+
+#exampleInputEmail1 {
+    width: 60%;
+}
+
+
 
