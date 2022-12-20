@@ -1,7 +1,4 @@
 /*css chiara*/
-h4 {
-    text-align: center;
-}
 
 #carouselExampleDark {
     width: 100%;
@@ -23,9 +20,58 @@ a:hover {
 }
 
 /*css Irene*/
-#filtri {
-    margin-left: 940px;
-    margin-top: 50px;
+
+.card-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#barra {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.animazione {
+    transition: transform .2s ease-in-out;
+}
+
+.animazione:hover {
+    transform: scale(1.2);
+}
+
+.dropdown {
+    justify-self: center;
+}
+
+/*dan
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+section{
+padding : 0 100px;
+background-color: url(bg.jpg);
+height: 100vh;
+display: flex;
+align-items: center;
+}
+.box
+{
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.box h2{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #044460;
 }
 
 
@@ -39,9 +85,60 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
   }
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    width: 50%;
-  }
+
+.card-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#barra {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.animazione {
+    transition: transform .2s ease-in-out;
+}
+
+.animazione:hover {
+    transform: scale(1.2);
+}
+
+.dropdown {
+    justify-self: center;
+}
+
+/*dan
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+section{
+padding : 0 100px;
+background-color: url(bg.jpg);
+height: 100vh;
+display: flex;
+align-items: center;
+}
+.box
+{
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.box h2{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #044460;
+}
+*/
 
 /*css Luca*/
 
@@ -70,6 +167,7 @@ body{
 
 ul{
     list-style: none;
+    padding-left: 0;
 }
 
 
@@ -139,4 +237,3 @@ ul{
     color: #24262b;
     background-color: #ffffff;
 }
-
