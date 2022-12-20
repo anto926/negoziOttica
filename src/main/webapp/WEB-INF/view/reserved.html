@@ -3,10 +3,55 @@
 <head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Amministrazione</title>
 </head>
 <body>
 	
+	<div class="container-fluid">
+		<div class="row mt-4">
+			
+			<div class="col-7">
+					<table class="table table-striped table-responsive">
+						<thead>
+							<tr>
+							<th>Immagine</th>
+								<th>Marca</th>
+								<th>Descrizione</th>
+								<th>Materiale</th>
+								<th>Genere</th>
+								<th>Tipologia</th>
+								<th>Colore</th>
+								<th>Prezzo</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr th:each="o : ${occhiali}">
+								 <td>
+									<img th:if="${!o.image}" th:src="@{static/images/markerImage.png}" class="img-thumbnail" alt="article"
+										style="width:50px;max-width:50px;height:60px;max-height:60px;">
+									<img th:if="${o.image}" th:src="@{'static/images/' + ${o.id} + '.png'}" class="img-thumbnail" alt="article"
+										style="width:50px;max-width:50px;height:60px;max-height:60px;">
+								</td>
+								<td th:text="${o.marca}"></td>
+								<td th:text="${o.descrizione}"></td>
+								<td th:text="${o.materiale}"></td>
+								<td th:text="${o.genere}"></td>
+								<td th:text="${o.tipologia}"></td>
+								<td th:text="${o.colore}"></td>
+								<td th:text="${o.prezzo}"></td>
+								<td class="text-end">
+									<a th:href="@{/reserved(id=${o.id})}" class="btn btn-primary btn-sm small-button" 
+										th:text="#{btn.edit}"></a>
+									<a th:href="@{/reserved/delete(id=${o.id})}" class="btn btn-danger btn-sm small-button" 
+										th:text="#{btn.delete}"></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+						<div class="col-1"></div>
+						
+	<div class="col-4">					
 	<form method="POST" th:object="${occhiale}">
 	  <div class="form-group">
 	    <label for="exampleInputEmail1">Marca</label>
@@ -39,11 +84,17 @@
 	    <label for="exampleInputPassword1">Prezzo</label>
 	    <input type="text" class="form-control" id="exampleInputPassword1" th:field="*{prezzo}" placeholder="Inserisci prezzo">
 	  </div>
-	  
-	 
 	  <button type="submit" class="btn btn-primary">Submit</button>
 	</form>
 	
+	</div>
+			
+		</div>
+	
+	</div>
+	
+			
+
 	
 					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

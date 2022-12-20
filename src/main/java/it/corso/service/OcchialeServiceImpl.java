@@ -37,8 +37,11 @@ public class OcchialeServiceImpl implements OcchialeService{
 	@Override
 	public void createOcchiale(Occhiale occhiale) {
 		occhialeDao.save(occhiale);
-		
 	}
 	
+	@Override
+	public void updateOcchiale(Occhiale occhiale, int id) {
+		occhialeDao.save(this.getOcchialeById(id));
+	}
 	
 }

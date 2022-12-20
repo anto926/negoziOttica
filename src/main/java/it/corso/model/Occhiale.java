@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.Pattern;
 
 @Entity
@@ -42,9 +43,20 @@ public class Occhiale implements Serializable{
 	//@Pattern(regexp = "[0-9]{1,255}", message = "{error.charnotallowed}")
 	@Column(name = "prezzo", length = 255, nullable = false)
 	private double prezzo;
+	
+	@Transient
+	private boolean image;
 
 	public int getId() {
 		return id;
+	}
+
+	public boolean isImage() {
+		return image;
+	}
+
+	public void setImage(boolean image) {
+		this.image = image;
 	}
 
 	public void setId(int id) {
