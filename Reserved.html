@@ -7,92 +7,213 @@
     <title>Reserved</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <style>
+      table {
+        width: 70%;
+        margin-top: 8%;
+        margin-bottom: 10%;
+        text-align: center;
+       }
+       tr,td {
+        padding: 3%;
+       }
+   </style>
 </head>
-<body>
-  <div class="container-fluid">
-		<div class="row mt-4">
-			
-			<div class="col-7">
-					<table class="table table-striped table-responsive">
-						<thead>
-							<tr>
-								<th>Marca</th>
-								<th>Modello</th>
-								<th>Materiale</th>
-								<th>Genere</th>
-								<th>Prezzo</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr th:each="o : ${occhiali}">
-								<td th:text="${o.marca}"></td>
-								<td th:text="${o.descrizione}"></td>
-								<td th:text="${o.materiale}"></td>
-								<td th:text="${o.genere}"></td>
-								<td th:text="${o.tipologia}"></td>
-								<td th:text="${o.colore}"></td>
-								<td th:text="${o.prezzo}"></td>
-								<td class="text-end">
-									<a th:href="@{/reserved(id=${o.id})}" class="btn btn-primary btn-sm small-button" 
-										th:text="#{btn.edit}">Modifica</a>
-									<a th:href="@{/reserved/delete(id=${o.id})}" class="btn btn-danger btn-sm small-button" 
-										th:text="#{btn.delete}">Elimina</a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-						<div class="col-1"></div>
-						
-	<div class="col-4">					
-	<form method="POST" th:object="${occhiale}">
-	  <div class="form-group">
-	    <label for="exampleInputEmail1">Marca</label>
-	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" th:field="*{marca}" placeholder="Inserisci marca">
-	    <small id="emailHelp" class="form-text text-muted"></small>
-	  </div>
-    <div class="form-group">
-	    <label for="exampleInputEmail1">Modello</label>
-	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" th:field="*{modello}" placeholder="Inserisci modello">
-	    <small id="emailHelp" class="form-text text-muted"></small>
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleInputPassword1">Tipologia</label>
-	    <input type="text" class="form-control" id="exampleInputPassword1" th:field="*{tipologia}" placeholder="Inserisci tipologia">
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleInputEmail1">Genere</label>
-	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" th:field="*{genere}" placeholder="Inserisci genere">
-	    <small id="emailHelp" class="form-text text-muted"></small>
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleInputPassword1">Colore</label>
-	    <input type="text" class="form-control" id="exampleInputPassword1" th:field="*{colore}" placeholder="Inserisci colore">
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleInputEmail1">Materiale</label>
-	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" th:field="*{materiale}" placeholder="Inserisci materiale">
-	    <small id="emailHelp" class="form-text text-muted"></small>
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleInputPassword1">Descrizione</label>
-	    <input type="text" class="form-control" id="exampleInputPassword1" th:field="*{descrizione}" placeholder="Inserisci descrizione">
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleInputPassword1">Prezzo</label>
-	    <input type="text" class="form-control" id="exampleInputPassword1" th:field="*{prezzo}" placeholder="Inserisci prezzo">
-	  </div>
-	  <button type="submit" class="btn btn-primary">Submit</button>
-	</form>
-	
-	</div>
-			
-		</div>
-	
-	</div>
 
+   <!-- header -->
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+          </button>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Occhiali</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body>
+  <h2 style="text-align: center; margin-top: 8%;">Area Riservata</h2>
+  <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <table>
+                <tr>
+                    <td>
+                        <b>Marca</b>
+                    </td>
+                    <td>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleziona una Marca</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Materiale</b>
+                    </td>
+                    <td>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleziona un Materiale</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Genere</b>
+                    </td>
+                    <td>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleziona un Genere</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Descrizione</b>
+                    </td>
+                    <td>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci descrizione" ></textarea>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <b>Prezzo</b>
+                    </td>
+                    <td>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" placeholder="Inserisci prezzo" aria-label="default input example">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Modello</b> 
+                    </td>
+                    <td>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" placeholder="Inserisci modello" aria-label="default input example">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Colore</b>
+                    </td>
+                    <td>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" placeholder="Inserisci colore" aria-label="default input example">
+                        </div>
+                    </td>
+                </tr>
+        
+            </table>
+        </div>
+        <div class="col-6">
+            <table>
+                <tr>
+                    <td>
+                        Marca
+                    </td>
+                    <td>
+                        Modello
+                    </td>
+                    <td>
+                        Materiale
+                    </td>
+                    <td>
+                        Genere
+                    </td>
+                    <td>
+                        Prezzo
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-dark">Modifica</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-dark">Cancella</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
   
+ <!-- footer -->
+ <footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4 class="titoli-f">Ottica</h4>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Servizi</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4 class="titoli-f">Help</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Shopping</a></li>
+                  <li><a href="#">Ordini</a></li>
+                  <li><a href="#">Pagamenti</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4 class="titoli-f">Shop</h4>
+              <ul>
+                  <li><a href="#">Occhiali da vista</a></li>
+                  <li><a href="#">Occhiali da sole</a></li>
+                  <li><a href="#">Accessori</a></li>
+                  <li><a href="#">Altro</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4 class="titoli-f">Follow us</h4>
+              <div class="social-links">
+                  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
