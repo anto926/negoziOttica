@@ -11,5 +11,5 @@ public interface OcchialeService {
 	List<Occhiale> getOcchiali();
 	void deleteOcchiale(Occhiale occhiale);
 	void createOcchiale(Occhiale occhiale);
-	void updateOcchiale(Occhiale occhiale, int id);
+	double applicaSconto(double prezzo);
 }
