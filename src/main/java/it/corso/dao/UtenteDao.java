@@ -8,5 +8,5 @@ import it.corso.model.Utente;
 
 public interface UtenteDao extends CrudRepository<Utente, Integer>{
 
-	Optional<Utente> findByUsernameAndPassword(String username, String password);
+	Utente findByUsernameAndPassword(String username, String password);
 }
