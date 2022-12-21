@@ -43,7 +43,6 @@ a:hover {
 }
 
 
-
 /*dan
 body{
     margin:0;
@@ -263,7 +262,9 @@ a:hover {
     justify-self: center;
 }
 
-
+.carosellodesc {
+    width: 100px;
+}
 
 
 /*css Matteo su header*/
