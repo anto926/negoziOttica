@@ -22,13 +22,11 @@ a:hover {
 /*css Irene*/
 
 .card-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
     font-weight: bold;
 }
 
 #barra {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 10px;
 }
 
@@ -43,6 +41,8 @@ a:hover {
 .dropdown {
     justify-self: center;
 }
+
+
 
 /*dan
 body{
@@ -87,13 +87,11 @@ align-items: center;
   }
 
 .card-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
     font-weight: bold;
 }
 
 #barra {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 10px;
 }
 
@@ -109,41 +107,24 @@ align-items: center;
     justify-self: center;
 }
 
-/*dan
-body{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
+.correlati {
+    margin-right: auto;
+    margin-left: auto;
 }
 
-section{
-padding : 0 100px;
-background-color: url(bg.jpg);
-height: 100vh;
-display: flex;
-align-items: center;
+.scopri {
+    margin-right: auto;
+    margin-left: auto;
 }
-.box
-{
-    position: relative;
-    max-width: 600px;
-    padding: 50px;
-    background: rgba(255,255,255,.2);
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-}
-.box h2{
-    margin: 0 0 20px;
-    padding: 0;
-    font-size: 48px;
-    text-transform: uppercase;
-    color: #044460;
-}
-*/
+
+
 
 /*css Luca*/
 
 body{
     line-height: 1.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 55px;
 }
 
 
@@ -262,13 +243,11 @@ a:hover {
 /*css Irene*/
 
 .card-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
     font-weight: bold;
 }
 
 #barra {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 10px;
 }
 
@@ -277,42 +256,14 @@ a:hover {
 }
 
 .animazione:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .dropdown {
     justify-self: center;
 }
 
-/*dan
-body{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-}
 
-section{
-padding : 0 100px;
-background-color: url(bg.jpg);
-height: 100vh;
-display: flex;
-align-items: center;
-}
-.box
-{
-    position: relative;
-    max-width: 600px;
-    padding: 50px;
-    background: rgba(255,255,255,.2);
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-}
-.box h2{
-    margin: 0 0 20px;
-    padding: 0;
-    font-size: 48px;
-    text-transform: uppercase;
-    color: #044460;
-}
 
 
 /*css Matteo su header*/
@@ -327,8 +278,6 @@ align-items: center;
   }
 
 .card-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
     font-weight: bold;
 }
 
@@ -344,52 +293,24 @@ align-items: center;
 
 .animazione:hover {
     transform: scale(1.2);
+    font-style: italic;
 }
 
 .dropdown {
     justify-self: center;
 }
 
-#prodotti {
-    padding-left: 0;
-    padding-right: 0;
+.prodotti {
+    width: 80%;
 }
 
-/*dan
-lul{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-}
 
-section{
-padding : 0 100px;
-background-color: url(bg.jpg);
-height: 100vh;
-display: flex;
-align-items: center;
-}
-.box
-{
-    position: relative;
-    max-width: 600px;
-    padding: 50px;
-    background: rgba(255,255,255,.2);
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-}
-.box h2{
-    margin: 0 0 20px;
-    padding: 0;
-    font-size: 48px;
-    text-transform: uppercase;
-    color: #044460;
-}
-*/
 
 /*css Luca*/
 
 body{
     line-height: 1.5;
+    margin-top: 55px;
 }
 
 
