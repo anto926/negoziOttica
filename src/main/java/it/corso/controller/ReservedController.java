@@ -25,18 +25,21 @@ import it.corso.service.OcchialeService;
 public class ReservedController {
 	
 	@Autowired
-	OcchialeService occhialeService;
+	private OcchialeService occhialeService;
 	
 	
 	@GetMapping
 	public String getPage(Model model, @RequestParam(name = "id", required = false) Integer id, HttpSession session) {
+		if(session.getAttribute("log") == null) {
+			return "redirect:/login";
+		}
 		Occhiale occhiale = id == null ? new Occhiale() : occhialeService.getOcchialeById(id);
 		model.addAttribute("occhiale", occhiale);
 		model.addAttribute("occhiali", occhialeService.getOcchiali());
-		String rootDir = session.getServletContext().getRealPath("/");
+		/*String rootDir = session.getServletContext().getRealPath("/");
 		String filePath = rootDir + "static\\articles\\" + id + ".png";
 		File file = new File(filePath);
-		occhiale.setImage(file.exists());
+		occhiale.setImage(file.exists());*/
 		return "reserved";
 	}
 	
