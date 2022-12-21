@@ -86,11 +86,13 @@ a:hover {
 
 #coupon {
    margin-top: 5%;
-   margin-bottom: 5%;
+   margin-bottom: ;
    padding: 5%;
    background-image: url(../immagini/sfondonewsletter.jpg);
    background-size: cover;
-   opacity: 0.6;
+   opacity: 0.5;
+   color: white;
+   
 }
 
 #exampleInputEmail1 {
@@ -98,7 +100,13 @@ a:hover {
 }
 
 #carosellone {
-    margin-top: 7%;
+    margin-top: 4%;
+}
+
+#testo-carosello {
+    color: black;
+    background-color: lightgray;
+    
 }
 
 
