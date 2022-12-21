@@ -19,14 +19,17 @@ public class LoginController {
 	private UtenteService utenteService;
 	
 	@GetMapping
-	public String getPage() {
+	public String getPage(HttpSession session) {
+		if(session.getAttribute("log") != null) {
+			return "redirect:/reserved";
+		}
 		return "login";
 	}
 	
 	@PostMapping("/login")
 	public String userLogin(@RequestParam(value = "username", required = false) String username, @RequestParam(value = "password", required = false) String password, HttpSession session) {
 		
-		if(utenteService.verificaLogin(username, password, session) == true || session.getAttribute("log") != null) {
+		if(utenteService.verificaLogin(username, password, session) == true) {
 			return "redirect:/reserved";
 		}else {
 			return "redirect:/login";
