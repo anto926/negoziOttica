@@ -6,22 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/chiara.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 <body>
-    <header>
 
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+          
+          
+              </button>
+          
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Occhiali</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chi siamo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <!-- Full Page Image Header with Vertically Centered Content -->
+          <header class="masthead">
+            <div class="container h-100">
+              <div class="row h-100 align-items-center">
+                </div>
+              </div>
+            </div>
+          </header>
     </header>
 
     <!-- Carosello grande -->
-    <div class="container">
+    <div id="carosellone" class="container-fluid">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6" style="padding-left: 0%; padding-right: 0%;">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                    <div id="ciao" class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="immagini/carosello2.jpeg" class="d-block w-100" alt="...">
+                        <img src="immagini/carosello1.jpeg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="immagini/carosello2.jpeg" class="d-block w-100" alt="...">
@@ -29,20 +63,22 @@
                     </div>
                   </div>  
             </div>
-            <div class="col-6">
-
+            <div id="testo-carosello" class="col-6">
+                <h2 style="text-align: center; margin-top:6%;">Benvenuto da JarmOttica,</h2> <br>
+                <h4 style="text-align: center;">vieni a trovarci nel nostro store <br> e approfitta dei nostri coupon per fare i tuoi acquisti!</h4>
+                <button type="button" class="btn btn-dark" style="margin-left: 38%; margin-top: 4%;">Dove ci troviamo</button>
             </div>
         </div>
     </div>
     
     <!-- Sezione best seller -->
-    <h2 style="text-align: center;  margin-bottom: 2%; margin-top: 2%; "> I nostri Best Seller </h2>
+    <h2 style="text-align: center;  margin-bottom: 2%; margin-top: 3%; "> I nostri Best Seller </h2>
 
     <div class="container">
         <div class="row">
-            <div class="col-4">  <h4>Montature in metallo</h4> </div>
-            <div class="col-4">  <h4>Montature in plastica</h4> </div>
-            <div class="col-4">  <h4>Montature naturali</h4> </div>
+            <div class="col-4">  <a href=""> <h4>Montature in metallo</h4> </a> </div>
+            <div class="col-4">  <a href=""> <h4>Montature in plastica</h4> </a> </div>
+            <div class="col-4">  <a href=""> <h4>Montature naturali</h4> </a> </div>
         </div>
     </div>
 
@@ -104,10 +140,6 @@
                 </div>
             </div>
 
-
-
-
-
             <div class="col-4">
                 <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-interval="false">
                     <div class="carousel-indicators">
@@ -164,9 +196,6 @@
                 </div>
             </div>
 
-
-
-            
             <div class="col-4">
                 <div id="carouselExampleDark3" class="carousel carousel-dark slide" data-interval="false">
                     <div class="carousel-indicators">
@@ -223,31 +252,94 @@
                 </div>
             </div>
         </div>
+    </div>
+    
+    <!-- Perchè comprare da jarmottica -->
+    <h2 style="text-align: center;  margin-bottom: 4%; margin-top: 3%; "> Perchè comprare da JarmOttica? </h2>
+    <div class="container">
         <div class="row">
-            <div class="col-4">
-                <p style="text-align: center;"> <a href="#">Vedi tutti</a> </p>
+            <div class="col-3">
+                <div class="box">
+                    <img src="immagini/assicurazione.png" width="50%" style="margin-bottom: 5%;">
+                    <h5> Assicurazione </h5>
+                    <p> Ogni prodotto acquistato ha un'assicurazione valida per 2 anni</p>
+                </div>
             </div>
-            <div class="col-4">
-                <p style="text-align: center;"> <a href="#">Vedi tutti</a> </p>
+            <div class="col-3">
+                <div class="box2">
+                    <img src="immagini/rimborso.png" width="50%" style="margin-bottom: 6%;">
+                    <h5> Rimborso </h5>
+                    <p> Ogni prodotto acquistato ha un'assicurazione valida per 2 anni</p>
+                </div>
             </div>
-            <div class="col-4">
-                <p style="text-align: center;"> <a href="#">Vedi tutti</a> </p>
+            <div class="col-3">
+                <div class="box3">
+                    <img src="immagini/sostenibile.png" width="50%" style="margin-bottom: 5%;">
+                    <h5> Sostenibilità </h5>
+                    <p> Ogni prodotto acquistato ha un'assicurazione valida per 2 anni</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="box4">
+                    <img src="immagini/clickandcollect.png" width="50%" style="margin-bottom: 5%;">
+                    <h5> Click & Collect </h5>
+                    <p> Ogni prodotto acquistato ha un'assicurazione valida per 2 anni</p>
+                </div>
             </div>
         </div>
     </div>
-        
 
-
+     <!-- Coupon -->
+     <div class="container-fluid">
+        <div class="row">
+           <div id="coupon" class="col-12">
+                <h2 style="text-align: center; opacity: 1;">Sapevi che puoi usufruire di un coupon del 20% per l'acquisto del tuo nuovo paio d'occhiali?</h2>
+                <h4 >È semplice! Vai nella scheda del prodotto che preferisci e genera il coupon.</h4>
+           </div>
+        </div>
+    </div>
     
-
-
-
-
-
-
-    <footer>
-
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="titoli-f">Ottica</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Servizi</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="titoli-f">Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Ordini</a></li>
+                        <li><a href="#">Pagamenti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="titoli-f">Shop</h4>
+                    <ul>
+                        <li><a href="#">Occhiali da vista</a></li>
+                        <li><a href="#">Occhiali da sole</a></li>
+                        <li><a href="#">Accessori</a></li>
+                        <li><a href="#">Altro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="titoli-f">Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
