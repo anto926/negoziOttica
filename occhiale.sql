@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Dic 21, 2022 alle 12:59
+-- Creato il: Dic 21, 2022 alle 17:33
 -- Versione del server: 10.4.25-MariaDB
 -- Versione PHP: 8.1.10
 
@@ -61,26 +61,19 @@ INSERT INTO `occhiale` (`id`, `marca`, `modello`, `descrizione`, `materiale`, `t
 (15, 'XYLOMIA', 'FGF7123', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Legno', 'Da vista', 'Da uomo', 'Multicolore', 260),
 (16, 'XYLOMIA', 'GOEGET65', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Legno', 'Da vista', 'Da uomo', 'Blu', 350),
 (17, 'XYLOMIA', 'WTRWERY8', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Legno', 'Da vista', 'Da uomo', 'Marrone', 370),
-(18, 'XYLOMIA', 'EGJAROT5', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Legno', 'Da vista', 'Da donna', 'Marrone', 350);
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `utente`
---
-
-CREATE TABLE `utente` (
-  `id` int(11) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dump dei dati per la tabella `utente`
---
-
-INSERT INTO `utente` (`id`, `email`, `password`) VALUES
-(1, 'danielemaledetti@gmail.com', 'admin\r\n');
+(18, 'XYLOMIA', 'EGJAROT5', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Legno', 'Da vista', 'Da donna', 'Marrone', 350),
+(19, 'XYLOMIA', 'FSGFGSJ4', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Legno', 'Da vista', 'Unisex', 'Marrone', 230),
+(20, 'Gucci', 'GG0890O', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da donna', 'Nero', 246.5),
+(21, 'Gucci', 'GG1069O', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da donna', 'Multicolore', 229),
+(22, 'Persol', '3189-V', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da donna', 'Nero', 187),
+(23, 'Chiara Ferragni', 'CF 1018', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da donna', 'Nero', 92.65),
+(24, 'Tom Ford', 'TF 5695-B', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da uomo', 'Multicolore', 204),
+(25, 'Persol', '3oo7-V-M', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da uomo', 'Nero', 162),
+(26, 'Tom Ford', 'TF 5294', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da uomo', 'Nero', 204),
+(27, 'Vogue', 'VO5215S W44/11', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da sole', 'Da donna', 'Nero', 104),
+(28, 'Carrera', '4013/S 003/9O', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da sole', 'Da uomo', 'Nero', 155.99),
+(29, 'Burberry', 'BE 2344', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da uomo', 'Nero', 170.85),
+(30, 'Tom Ford', 'TF 5629', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tellus vel sem sodales, id accumsan mi pretium. Proin eu augue ullamcorper, pellentesque risus scelerisque, scelerisque nunc. Sed lobortis mollis tortor, vitae porta velit commodo eget. Proin ultricies interdum ipsum, non interdum quam consequat mattis. Nullam at pellentesque libero. Sed pellentesque porta sem sit amet feugiat. Pellentesque ut sem sed orci viverra pharetra. Quisque quis ipsum ligula. Ut fringilla eros et pharetra vestibulum. Aenean a congue ipsum. In hac habitasse platea dictumst. Sed quis erat nunc. Etiam non euismod tortor. Phasellus aliquam scelerisque elit, at porttitor nibh sodales in. Ut sed ullamcorper neque.', 'Plastica', 'Da vista', 'Da uomo', 'Nero', 221);
 
 --
 -- Indici per le tabelle scaricate
@@ -98,12 +91,6 @@ ALTER TABLE `occhiale`
   ADD KEY `marca` (`marca`);
 
 --
--- Indici per le tabelle `utente`
---
-ALTER TABLE `utente`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT per le tabelle scaricate
 --
 
@@ -111,13 +98,7 @@ ALTER TABLE `utente`
 -- AUTO_INCREMENT per la tabella `occhiale`
 --
 ALTER TABLE `occhiale`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-
---
--- AUTO_INCREMENT per la tabella `utente`
---
-ALTER TABLE `utente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
