@@ -22,8 +22,12 @@ public class Occhiale implements Serializable{
 	private int id;
 	
 	@Pattern(regexp = "[a-zA-Z\\s']{1,255}", message = "{error.charnotallowed}")
-	@Column(name = "descrizione", length = 255, nullable = false)
+	@Column(name = "descrizione", nullable = false)
 	private String descrizione;
+	
+	@Pattern(regexp = "[a-zA-Z\\s']{1,255}", message = "{error.charnotallowed}")
+	@Column(name = "modello", length = 255, nullable = false)
+	private String modello;
 	
 	@Column(name = "materiale", length = 255, nullable = false)
 	private String materiale;
@@ -119,5 +123,11 @@ public class Occhiale implements Serializable{
 		this.prezzo = prezzo;
 	}
 	
-	
+	public String getModello() {
+		return modello;
+	}
+
+	public void setModello(String modello) {
+		this.modello = modello;
+	}
 }
