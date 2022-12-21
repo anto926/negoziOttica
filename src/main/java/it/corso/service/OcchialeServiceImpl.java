@@ -16,7 +16,18 @@ public class OcchialeServiceImpl implements OcchialeService{
 
 	@Override
 	public String codiceSconto() {
-		return null;
+		char carattere;
+		String iD = "";
+		for (int i = 0; i < 2; i++){
+            carattere = (char)(Math.random()*26 + 65);     //genero primi due caratteri lettere maiuscole da A a Z e i restanti 8 caratteri numeri da 0 a 9
+            iD += carattere;
+        }
+        
+        for (int i = 0; i < 4; i++){
+            carattere = (char)(Math.random()*10 + 48);
+            iD += carattere;
+        }
+		return iD;
 	}
 
 	@Override
@@ -38,10 +49,13 @@ public class OcchialeServiceImpl implements OcchialeService{
 	public void createOcchiale(Occhiale occhiale) {
 		occhialeDao.save(occhiale);
 	}
-	
+
 	@Override
-	public void updateOcchiale(Occhiale occhiale, int id) {
-		occhialeDao.save(this.getOcchialeById(id));
+	public double applicaSconto(double prezzo) {
+		double sconto;
+		sconto = prezzo - ((prezzo / 100) * 20);
+		return sconto;
 	}
+	
 	
 }
