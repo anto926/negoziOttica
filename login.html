@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <title>Login</title>
+
+    <style>
+        #form {
+            width: 30%;
+            margin: auto;
+            margin-top: 2%;
+            margin-bottom: 7%;
+        }
+        .form-group {
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+     <!-- header -->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+              </button>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Occhiali
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chi siamo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- form -->
+    <h2 style="text-align: center; margin-top:10%;">Login Admin</h2>
+    <form>
+        <div id="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button style="margin-top: 2%; margin-left: 40%;" type="submit" class="btn btn-dark">Accedi</button>
+        </div>
+      </form>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="titoli-f">Ottica</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Servizi</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="titoli-f">Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Ordini</a></li>
+                        <li><a href="#">Pagamenti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="titoli-f">Shop</h4>
+                    <ul>
+                        <li><a href="#">Occhiali da vista</a></li>
+                        <li><a href="#">Occhiali da sole</a></li>
+                        <li><a href="#">Accessori</a></li>
+                        <li><a href="#">Altro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="titoli-f">Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
