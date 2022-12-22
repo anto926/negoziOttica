@@ -11,8 +11,8 @@
     <style>
       table {
         width: 70%;
-        margin-top: 8%;
-        margin-bottom: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         text-align: center;
        }
        tr,td {
@@ -46,18 +46,21 @@
       </nav>
 </header>
 <body>
-  <h2 style="text-align: center; margin-top: 8%;">Area Riservata</h2>
-  <div class="container">
+  <h2 style="text-align: center; margin-top: 8%;">Area Riservata Admin</h2>
+
+  <!-- form -->
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-6">
-            <table>
+        <div class="col-5">
+            <h4 style="margin-left: 31%; margin-top: 5%;">Inserimento dati</h4>
+            <table style="margin-left: 10%; background-color: lightgray; border-radius: 2%;">
                 <tr>
                     <td>
                         <b>Marca</b>
                     </td>
                     <td>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleziona una Marca</option>
+                            <option selected disabled>Seleziona marca</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -70,7 +73,7 @@
                     </td>
                     <td>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleziona un Materiale</option>
+                            <option selected disabled>Seleziona materiale</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -83,7 +86,7 @@
                     </td>
                     <td>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleziona un Genere</option>
+                            <option selected disabled>Seleziona genere</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -130,39 +133,40 @@
                         </div>
                     </td>
                 </tr>
-        
             </table>
+            <button style="margin-left: 38%; margin-bottom: 10%;" type="button" class="btn btn-dark">Invia</button> 
         </div>
-        <div class="col-6">
-            <table>
+        <!-- tabella -->
+        <div class="col-7">
+            <table style="width: 85%;">
                 <tr>
-                    <td>
-                        Marca
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">
+                        <b>Marca</b>
                     </td>
-                    <td>
-                        Modello
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">
+                        <b>Modello</b>
                     </td>
-                    <td>
-                        Materiale
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">
+                        <b>Materiale</b>
                     </td>
-                    <td>
-                        Genere
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">
+                        <b>Genere</b>
                     </td>
-                    <td>
-                        Prezzo
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">
+                        <b>Prezzo</b>
                     </td>
                     
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;"> Versace</td>
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">Occhiali da sole</td>
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">Metallo</td>
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">Donna</td>
+                    <td style="border-bottom: 1px solid; border-collapse: collapse;">300€</td>
+                    <td style="padding-right: 0%;">
                         <button type="button" class="btn btn-dark">Modifica</button>
                     </td>
-                    <td>
+                    <td style="padding-left: 2%;">
                         <button type="button" class="btn btn-dark">Cancella</button>
                     </td>
                 </tr>
@@ -173,43 +177,48 @@
   
  <!-- footer -->
  <footer class="footer">
-  <div class="container">
-      <div class="row">
-          <div class="footer-col">
-              <h4 class="titoli-f">Ottica</h4>
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Servizi</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-              </ul>
-          </div>
-          <div class="footer-col">
-              <h4 class="titoli-f">Help</h4>
-              <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Shopping</a></li>
-                  <li><a href="#">Ordini</a></li>
-                  <li><a href="#">Pagamenti</a></li>
-              </ul>
-          </div>
-          <div class="footer-col">
-              <h4 class="titoli-f">Shop</h4>
-              <ul>
-                  <li><a href="#">Occhiali da vista</a></li>
-                  <li><a href="#">Occhiali da sole</a></li>
-                  <li><a href="#">Accessori</a></li>
-                  <li><a href="#">Altro</a></li>
-              </ul>
-          </div>
-          <div class="footer-col">
-              <h4 class="titoli-f">Follow us</h4>
-              <div class="social-links">
-                  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4 class="titoli-f">Iscriviti alla newsletter</h4>
+                <ul style="color: white;">
+                    <li style="width:190%;">Rimani sempre aggiornato sulle ultime promozioni o collezioni di JarmOttica! <br> Inoltre riceverai via mail uno sconto di 5€ sul tuo primo acquisto.</li>
+                    <li style="width:100%;">
+                        <div class="mb-3">
+                            <input style="margin-top: 8%;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci la tua email">
+                        </div>
+                    </li>
+                    <li> <button type="submit" class="btn btn-dark mb-3">Iscrivimi</button></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                
+            </div>
+            <div class="footer-col">
+                <h4 class="titoli-f">Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ordini</a></li>
+                    <li><a href="#">Pagamenti</a></li>
+                    <li><a href="#">Informativa Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="titoli-f">Contatti</h4>
+                <ul style="color: white;">
+                    <li>© JarmOttica s.r.l. 2022 </li>
+                    <li>P.IVA 12949250158</li>
+                    <li>Via Dei Serpenti, 26 00184 Roma RM</li>
+                    <li>Tel. 06 2045679</li>
+                </ul>
+                <div style="margin-top: 8%;" class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script src="js/bootstrap.min.js"></script>
