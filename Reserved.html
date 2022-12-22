@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area Riservata Admin</title>
+    <title>Area Admin</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -13,7 +13,6 @@
         width: 70%;
         margin-top: 5%;
         margin-bottom: 5%;
-        text-align: center;
        }
        tr,td {
         padding: 3%;
@@ -21,39 +20,48 @@
    </style>
 </head>
 
-   <!-- header -->
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
-          </button>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Occhiali</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Chi siamo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-</header>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+              </button>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="btn btn-dark bottoni-h" href="#" role="button">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown-center">
+                        <button class="btn btn-secondary dropdown-toggle bottoni-h" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Occhiali
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Tutti gli occhiali</a></li>
+                          <li><a class="dropdown-item" href="#">Montature in metallo</a></li>
+                          <li><a class="dropdown-item" href="#">Montature in plastica</a></li>
+                          <li><a class="dropdown-item" href="#">Montature naturali</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark bottoni-h" href="#" role="button">Area Admin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
 <body>
-  <h2 style="text-align: center; margin-top: 8%;">Area Riservata Admin</h2>
+  <h2 style="text-align: center; margin-top: 8%;">Area Admin</h2>
 
   <!-- form -->
   <div class="container-fluid">
     <div class="row">
         <div class="col-5">
             <h4 style="margin-left: 31%; margin-top: 5%;">Inserimento dati</h4>
-            <table style="margin-left: 10%; background-color: lightgray; border-radius: 2%; ">
+            <table style="margin-left: 10%; background-color: lightgray; border-radius: 2%; text-align: center; ">
                 <tr>
                     <td>
                         <b>Marca</b>

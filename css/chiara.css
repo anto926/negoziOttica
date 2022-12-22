@@ -113,6 +113,23 @@ a:hover {
     
 }
 
+.bottoni-h {
+    background-color: #f8f9fa;
+    color: grey;
+    border-color: #f8f9fa;
+}
+
+.bottoni-h:hover {
+    color: #000 !important; 
+    background-color: #f8f9fa !important; 
+    border-color: #f8f9fa !important; 
+}
+
+.bottoni-h:focus {
+    color: #000 !important; 
+    background-color: #f8f9fa !important; 
+    border-color: #f8f9fa !important; 
+}
 
 /* footer */
 

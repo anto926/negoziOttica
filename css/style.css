@@ -42,6 +42,24 @@ a:hover {
     justify-self: center;
 }
 
+.bottoni-h {
+    background-color: #f8f9fa;
+    color: grey;
+    border-color: #f8f9fa;
+}
+
+.bottoni-h:hover {
+    color: #000 !important; 
+    background-color: #f8f9fa !important; 
+    border-color: #f8f9fa !important; 
+}
+
+.bottoni-h:focus {
+    color: #000 !important; 
+    background-color: #f8f9fa !important; 
+    border-color: #f8f9fa !important; 
+}
+
 
 /*dan
 body{
@@ -417,7 +435,7 @@ ul{
   box-sizing:border-box;
 }
 body{
-  font-family: "Poppins", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*SONO CHIARA HO CAMBIATO IL FONT PERCHè TU NE AVEVI UNO DIVERSO E SBALLAVA*/
 }
 div.c{
   position: relative;
