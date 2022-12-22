@@ -408,8 +408,7 @@ ul{
 
 
 
-/*dasdsa
-
+/*Daniele*/
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700");
 *, *::after, *::before{
@@ -422,9 +421,9 @@ body{
 }
 div.c{
   position: relative;
-  margin:1em;
+  margin:2em;
 }
-input{
+#faq-1{
   position: absolute;
   left: 0;
   top: 0;
@@ -433,19 +432,13 @@ input{
   opacity:0;
   visibility: 0;
 }
-h1{
-  background:white;
-  color:black;
-  padding:1em;
-  position: relative;
-}
-label::before{
+#faq-2::before{
   content:"";
   display: inline-block;
   border: 15px solid transparent;
   border-left:20px solid black;
 }
-label{
+#faq-2{
   cursor: pointer;
   position: relative;
   display: flex;
@@ -456,12 +449,12 @@ div.p{
   overflow: hidden;
   transition:max-height 0.5s;
   background-color: white;
-  box-shadow:0 0 10px 0 rgba(8, 26, 222, 0.2);
+  box-shadow:0 0 10px 0 white;
 }
 div.p p {
   padding:2em;
 }
-input:checked ~ h1 label::before{
+input:checked ~ h1 #faq-2::before{
   border-left:10px solid transparent;
   border-top:20px solid black;
   margin-top:12px;
@@ -473,4 +466,3 @@ input:checked ~ h1 ~ div.p{
 a{
   color:steelblue;
 } 
-*/
