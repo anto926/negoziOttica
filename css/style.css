@@ -19,6 +19,12 @@ a:hover {
     color: black;
 }
 
+#testo-carosello {
+    color: black;
+    background-color: lightgray;
+    
+}
+
 /*css Irene*/
 
 .card-text {
@@ -58,37 +64,6 @@ a:hover {
     color: #000 !important; 
     background-color: #f8f9fa !important; 
     border-color: #f8f9fa !important; 
-}
-
-
-/*dan
-body{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-}
-
-section{
-padding : 0 100px;
-background-color: url(bg.jpg);
-height: 100vh;
-display: flex;
-align-items: center;
-}
-.box
-{
-    position: relative;
-    max-width: 600px;
-    padding: 50px;
-    background: rgba(255,255,255,.2);
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-}
-.box h2{
-    margin: 0 0 20px;
-    padding: 0;
-    font-size: 48px;
-    text-transform: uppercase;
-    color: #044460;
 }
 
 
