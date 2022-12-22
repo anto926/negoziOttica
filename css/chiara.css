@@ -33,7 +33,7 @@ a:hover {
     height: 95%;
     padding: 8%;
     background-color: lightgrey;
-    border-radius: 10%;
+    border-radius: 6%;
     margin: auto;
     transition: transform .2s; /* Animation */
 }
@@ -44,7 +44,7 @@ a:hover {
     height: 95%;
     padding: 8%;
     background-color: lightgrey;
-    border-radius: 10%;
+    border-radius: 6%;
     margin: auto;
     transition: transform .2s; /* Animation */
 }
@@ -55,7 +55,7 @@ a:hover {
     height: 95%;
     padding: 8%;
     background-color: lightgrey;
-    border-radius: 10%;
+    border-radius: 6%;
     margin: auto;
     transition: transform .2s; /* Animation */
     
@@ -67,7 +67,7 @@ a:hover {
     height: 95%;
     padding: 8%;
     background-color: lightgrey;
-    border-radius: 10%;
+    border-radius: 6%;
     margin: auto;
     transition: transform .2s; /* Animation */
     
