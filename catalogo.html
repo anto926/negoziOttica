@@ -12,14 +12,18 @@
     <link rel="icon" type="image/x-icon" href="immagini/icona.ico">
 </head>
 <body>
+  <!--Navbar responsive-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+          <a class="navbar-brand" href="home.html"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item active">
-                <a class="btn btn-dark bottoni-h" href="#" role="button">Home</a>
+                <a class="btn btn-dark bottoni-h" href="home.html" role="button">Home</a>
               </li>
               <li class="nav-item">
                 <div class="dropdown-center">
@@ -35,6 +39,12 @@
                   </div>
               </li>
               <li class="nav-item">
+                <a class="btn btn-dark bottoni-h" href="home.html" role="button">Trova Negozio</a>  
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-dark bottoni-h" href="home.html" role="button">Contattaci</a>  
+              </li>
+              <li class="nav-item">
                 <a class="btn btn-dark bottoni-h" href="#" role="button">Area Admin</a>
               </li>
             </ul>
@@ -42,46 +52,85 @@
         </div>
       </nav>
 </header>
-
-  <div id="carosellone" class="container-fluid">
-    <div class="row">
-        <div class="col-6" style="padding-left: 0%; padding-right: 0%;">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div id="ciao" class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="immagini/carosello2.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="immagini/caros.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="immagini/carosello4.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="immagini/carosello.png" class="d-block w-100" alt="...">
-                  </div>
+<!-- Carosello grande -->
+<div id="carosellone" class="container-fluid">
+  <div class="row">
+      <div class="col-lg-6 col-sm-12 col-md-6" style="padding-left: 0%; padding-right: 0%;">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div id="ciao" class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="immagini/carosello2.jpeg" class="d-block w-100" alt="...">
                 </div>
-              </div>  
-        </div>
-        <div id="testo-carosello" class="col-6">
-            <h2 style="text-align: center; margin-top:6%;">Benvenuto da JarmOttica,</h2> <br>
-            <h4 style="text-align: center;">vieni a trovarci nel nostro store <br> e approfitta dei nostri coupon per fare i tuoi acquisti!</h4>
-            <button type="button" class="btn btn-dark" style="margin-left: 38%; margin-top: 4%;">Dove ci troviamo</button>
-        </div>
-    </div>
-</div>
+                <div class="carousel-item">
+                  <img src="immagini/caros.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="immagini/carosello4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="immagini/carosello.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>  
+      </div>
+      <div id="testo-carosello" class="col-lg-6 col-sm-12 col-md-6">
+          <h2 style="text-align: center; margin-top:10%;">Benvenuto da JarmOttica,</h2> <br>
+          <h4 style="text-align: center;">vieni a trovarci nel nostro store <br> e approfitta dei nostri coupon per fare i tuoi acquisti!</h4>
+      </div>
+  </div>
 </div>
   <div class="container-fluid bg-light" id="barra">
         <h1>Occhiali</h1>
     </div>
   </div>
-    <div class="container-fluid">
+  <div class="container-fluid" style="width: 410px; margin-left: 75%; margin-top: 5px;">
+    <div class="btn-group">
+      <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Materiale
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Metallo</a></li>
+        <li><a class="dropdown-item" href="#">Legno</a></li>
+        <li><a class="dropdown-item" href="#">Plastica</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Genere
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Uomo</a></li>
+        <li><a class="dropdown-item" href="#">Donna</a></li>
+        <li><a class="dropdown-item" href="#">Unisex</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Tipo
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Da vista</a></li>
+        <li><a class="dropdown-item" href="#">Da sole</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Marca
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Ray-ban</a></li>
+        <li><a class="dropdown-item" href="#">Gucci</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="container-fluid" style="margin-top: 5px;">
           <div class="row g-0">
             <div class="col-lg-4 col-sm-12 col-md-4">
-              <a href="descrizione.html"><div class="card shadow-sm animazione prodotti">
+              <a href="descrizione.html" style="text-decoration: none; color: black;"><div class="card shadow-sm animazione prodotti">
                 <img src="immagini/occhiali_metallo/occhiale_metallo.jpg" alt="">
                 <div class="card-body bg-light">
-                  <p class="card-text">Ray-ban</p>
+                  <p class="card-text" style="font-size: 25px;">Ray-ban</p>
+                  <p>RBARHEF2 <br> <span style="font-weight: bolder; font-size: 20px;">230€</span></p>
                 </div>
               </div>
             </a>
@@ -130,7 +179,7 @@
           </div>
       </div>
   </footer>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>    
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  
 </body>
 </html>
