@@ -23,36 +23,42 @@
 <body>
 
     <!-- header -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
-                <div class="container">
-                  <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
-                  </button>
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item active">
-                        <a class="btn btn-dark bottoni-h" href="#" role="button">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <div class="dropdown-center">
-                            <button class="btn btn-secondary dropdown-toggle bottoni-h" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Occhiali
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Tutti gli occhiali</a></li>
-                              <li><a class="dropdown-item" href="#">Montature in metallo</a></li>
-                              <li><a class="dropdown-item" href="#">Montature in plastica</a></li>
-                              <li><a class="dropdown-item" href="#">Montature naturali</a></li>
-                            </ul>
-                          </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="btn btn-dark bottoni-h" href="#" role="button">Area Admin</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+              </button>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="btn btn-dark bottoni-h" href="home.html" role="button">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown-center">
+                        <button class="btn btn-secondary dropdown-toggle bottoni-h" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Occhiali
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Tutti gli occhiali</a></li>
+                          <li><a class="dropdown-item" href="#">Montature in metallo</a></li>
+                          <li><a class="dropdown-item" href="#">Montature in plastica</a></li>
+                          <li><a class="dropdown-item" href="#">Montature naturali</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark bottoni-h" href="trovanegozio.html" role="button">Trova Negozio</a>  
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark bottoni-h" href="contattaci.html" role="button">Contattaci</a>  
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark bottoni-h" href="login.html" role="button">Area Admin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
     
 
   <h2 style="text-align: center; margin-top: 8%;">Area Admin</h2>
@@ -69,7 +75,7 @@
                     </td>
                     <td>
                         <select style="margin-top: 5%;" class="form-select" aria-label="Default select example">
-                            <option selected disabled>Seleziona marca</option>
+                            
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -82,7 +88,7 @@
                     </td>
                     <td>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected disabled>Seleziona materiale</option>
+                            
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -95,7 +101,20 @@
                     </td>
                     <td>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected disabled>Seleziona genere</option>
+                            
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Tipologia</b>
+                    </td>
+                    <td>
+                        <select class="form-select" aria-label="Default select example">
+                            
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -139,7 +158,7 @@
                     <td>
                         <div class="mb-3">
                             <select class="form-select" aria-label="Default select example">
-                                <option selected disabled>Seleziona colore</option>
+                                
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -190,7 +209,7 @@
     </div>
 </div>
   
- <!-- footer -->
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -203,7 +222,7 @@
                                 <input style="margin-top: 8%;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci la tua email">
                             </div>
                         </li>
-                        <li> <button type="submit" class="btn btn-dark mb-3">Iscrivimi</button></li>
+                        <li style="margin-top: 7%;"> <button type="submit" class="btn btn-dark mb-3">Iscrivimi</button></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -213,19 +232,20 @@
                     <h4 class="titoli-f">Help</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Ordini</a></li>
-                        <li><a href="#">Pagamenti</a></li>
+                        <li><a href="#">Contattaci</a></li>
+                        <li><a href="#">Trova Negozio</a></li>
                         <li><a href="#">Informativa Privacy</a></li>
                         <li><a href="#">Cookies</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="titoli-f">Contatti</h4>
+                    <h4 class="titoli-f">Info</h4>
                     <ul style="color: white;">
                         <li>© JarmOttica s.r.l. 2022 </li>
                         <li>P.IVA 12949250158</li>
-                        <li>Via Dei Serpenti, 26 00184 Roma RM</li>
-                        <li>Tel. 06 2045679</li>
+                        <li>Via Del Corso, 407 00186 Roma RM</li>
+                        <li>info.jarmottica@gmail.com</li>
+                        <li>Tel. 062045679</li>
                     </ul>
                     <div style="margin-top: 8%;" class="social-links">
                         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
