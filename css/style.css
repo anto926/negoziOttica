@@ -211,27 +211,6 @@ ul{
     background-color: #ffffff;
 }
 
-/*css chiara*/
-
-#carouselExampleDark {
-    width: 100%;
-}
-
-.card {
-    margin: auto;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    width: 60%;
-}
-
-a {
-    color: grey;
-}
-
-a:hover {
-    color: black;
-}
-
 /*css Irene*/
 
 .card-text {
@@ -276,7 +255,7 @@ a:hover {
 }
 
 #barra {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
 }

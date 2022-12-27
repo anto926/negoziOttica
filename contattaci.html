@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contattaci</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <style>
+        #form {
+            width: 30%;
+            margin: auto;
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }
+        .form-group {
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+              </button>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="btn btn-dark bottoni-h" href="home.html" role="button">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown-center">
+                        <button class="btn btn-secondary dropdown-toggle bottoni-h" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Occhiali
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Tutti gli occhiali</a></li>
+                          <li><a class="dropdown-item" href="#">Montature in metallo</a></li>
+                          <li><a class="dropdown-item" href="#">Montature in plastica</a></li>
+                          <li><a class="dropdown-item" href="#">Montature naturali</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark bottoni-h" href="trovanegozio.html" role="button">Trova Negozio</a>  
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark bottoni-h" href="contattaci.html" role="button">Contattaci</a>  
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark bottoni-h" href="login.html" role="button">Area Admin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<!-- Carosello grande -->
+<div id="carosellone" class="container-fluid">
+    <div class="row">
+        <div class="col-6" style="padding-left: 0%; padding-right: 0%;">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div id="ciao" class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="immagini/carosello2.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="immagini/caros.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="immagini/carosello4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="immagini/carosello.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>  
+        </div>
+        <div id="testo-carosello" class="col-6">
+            <h2 style="text-align: center; margin-top:10%;">Contattaci</h2> <br>
+            <h4 style="text-align: center;">Compila il form sottostante <br> e verrai ricontattato dal nostro team d'assistenza <br> entro 24 ore</h4>
+            
+        </div>
+    </div>
+</div>
+<br>
+<!-- form -->
+<form>
+    <div id="form">
+        <div class="form-group">
+            <h5>Nome*</h5> <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci nome">
+          </div>
+
+          <div class="form-group">
+            <h5>Cognome*</h5><input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci cognome">
+          </div>
+
+          <div class="form-group">
+            <h5>Telefono</h5> <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci telefono">
+          </div>
+
+          <div class="form-group">
+            <h5>Email*</h5> <input type="email" placeholder="Inserisci email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="form-group">
+            <h5>Messaggio*</h5> <textarea class="form-control" placeholder="Scrivi qui il tuo messaggio" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <p class="small ml 2">* Campi obbligatori per aiutarci a fornire un servizio efficace</p>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Accetto l'informativa sulla privacy
+            </label>
+          </div>
+          <button style="margin-top: 5%; margin-left: 40%;" type="submit" class="btn btn-dark">Invia</button>
+    </div>
+  </form>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="titoli-f">Iscriviti alla newsletter</h4>
+                    <ul style="color: white;">
+                        <li style="width:190%;">Rimani sempre aggiornato sulle ultime promozioni o collezioni di JarmOttica! <br> Inoltre riceverai via mail uno sconto di 5€ sul tuo primo acquisto.</li>
+                        <li style="width:100%;">
+                            <div class="mb-3">
+                                <input style="margin-top: 8%;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci la tua email">
+                            </div>
+                        </li>
+                        <li style="margin-top: 7%;"> <button type="submit" class="btn btn-dark mb-3">Iscrivimi</button></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    
+                </div>
+                <div class="footer-col">
+                    <h4 class="titoli-f">Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contattaci</a></li>
+                        <li><a href="#">Trova Negozio</a></li>
+                        <li><a href="#">Informativa Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="titoli-f">Info</h4>
+                    <ul style="color: white;">
+                        <li>© JarmOttica s.r.l. 2022 </li>
+                        <li>P.IVA 12949250158</li>
+                        <li>Via Del Corso, 407 00186 Roma RM</li>
+                        <li>info.jarmottica@gmail.com</li>
+                        <li>Tel. 062045679</li>
+                    </ul>
+                    <div style="margin-top: 8%;" class="social-links">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

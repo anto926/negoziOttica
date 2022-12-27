@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trova Negozio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <style>
+      .depressione {
+        width: 77%;
+        margin-top: 15%;
+        transition: transform .2s; /* Animation */
+      }
+
+      .depressione:hover {
+        transform: scale(1.1);
+      }
+
+      .card-body {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+      }
+
+   </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="immagini/jarmottica-high-resolution-logo-color-on-transparent-background.png" width="80" height="25"></a>
+            </button>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                  <a class="btn btn-dark bottoni-h" href="home.html" role="button">Home</a>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown-center">
+                      <button class="btn btn-secondary dropdown-toggle bottoni-h" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Occhiali
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Tutti gli occhiali</a></li>
+                        <li><a class="dropdown-item" href="#">Montature in metallo</a></li>
+                        <li><a class="dropdown-item" href="#">Montature in plastica</a></li>
+                        <li><a class="dropdown-item" href="#">Montature naturali</a></li>
+                      </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-dark bottoni-h" href="trovanegozio.html" role="button">Trova Negozio</a>  
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-dark bottoni-h" href="contattaci.html" role="button">Contattaci</a>  
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-dark bottoni-h" href="login.html" role="button">Area Admin</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+    <!-- Carosello grande -->
+    <div id="carosellone" class="container-fluid">
+        <div class="row">
+            <div class="col-6" style="padding-left: 0%; padding-right: 0%;">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div id="ciao" class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="immagini/carosello2.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="immagini/caros.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="immagini/carosello4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="immagini/carosello.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>  
+            </div>
+            <div id="testo-carosello" class="col-6">
+                <h2 style="text-align: center; margin-top:10%;">Trova il negozio più vicino a te</h2> <br>
+                <h4 style="text-align: center;">JarmOttica dispone di 5 punti vendita <br> sparsi per la capitale, scopri dove! </h4>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Punti vendita -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <div style="margin-left: 30%;" class="card text-bg-dark mb-3 depressione" >
+            <div class="card-body">
+              <h5 class="card-title">JarmOttica - Sede Centrale</h5>
+              <p class="card-text">Via Del Corso 407, 00186 Roma <br> info.jarmottica@gmail.com <br> Tel. 062045679 <br>
+              <hr style="border: 1px solid white; border-radius: 5px;">
+              <b>Orari d'apertura</b> <br> Lunedì - Sabato: 10.00 - 20.00 <br> Domenica: 10.00 - 13.00
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.5185450408494!2d12.477317215268581!3d41.90321027922011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053f4560eaf%3A0x92dc2249ee91dd51!2sVia%20del%20Corso%2C%2000187%20Roma%20RM!5e0!3m2!1sit!2sit!4v1671791788195!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card text-bg-dark mb-3 depressione" >
+            
+            <div class="card-body">
+              <h5 class="card-title">JarmOttica - Parioli</h5>
+              <p class="card-text">Via Cola Di Rienzo 155, 00192 Roma <br> info.jarmottica2@gmail.com <br> Tel. 063715970 <br>
+              <hr style="border: 1px solid white; border-radius: 5px;">
+              <b>Orari d'apertura</b> <br> Lunedì - Sabato: 10.00 - 20.00 <br> Domenica: 10.00 - 13.00
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.296971924979!2d12.463019315268786!3d41.90797427921979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f605f22bdafa7%3A0x7d982b12c58cd74b!2sVia%20Cola%20di%20Rienzo%2C%20Roma%20RM!5e0!3m2!1sit!2sit!4v1671791934276!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div style="margin-right: 30%;" class="card text-bg-dark mb-3 depressione" >
+            <div class="card-body">
+              <h5 class="card-title">JarmOttica - Valle Aurelia</h5>
+              <p class="card-text">Via di Valle Aurelia 34, 00167 Roma <br> info.jarmottica3@gmail.com <br> Tel. 06367234 <br>
+                <hr style="border: 1px solid white; border-radius: 5px;">
+                <b>Orari d'apertura</b> <br> Lunedì - Sabato: 10.00 - 20.00 <br> Domenica: Chiuso
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.046519361134!2d12.431438415268904!3d41.91335867921936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f5fd5c5b8708d%3A0xbf932145835d0dc9!2sVia%20di%20Valle%20Aurelia%2C%20Roma%20RM!5e0!3m2!1sit!2sit!4v1671791977968!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div style="margin-left: 30%; margin-top: 6%;" class="card text-bg-dark mb-3 depressione" >
+            <div class="card-body">
+              <h5 class="card-title">JarmOttica - Eur</h5>
+              <p class="card-text">Viale Beethoven 55, 00186 Roma <br> info.jarmottica4@gmail.com <br> Tel. 060097833 <br>
+                <hr style="border: 1px solid white; border-radius: 5px;">
+                <b>Orari d'apertura</b> <br> Lunedì - Sabato: 10.00 - 20.00 <br> Domenica: 10.00 - 13.00
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.769524074502!2d12.464674315266175!3d41.83326077922566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258ae2279816c1%3A0xba3d766c21d78117!2sViale%20Beethoven%2C%2000144%20Roma%20RM!5e0!3m2!1sit!2sit!4v1671792014157!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div style="margin-top: 6%;" class="card text-bg-dark mb-3 depressione" >
+            <div class="card-body">
+              <h5 class="card-title">JarmOttica - Garbatella</h5>
+              <p class="card-text">Via Palos 67, 00192 Roma <br> info.jarmottica5@gmail.com <br> Tel. 061234562 <br>
+                <hr style="border: 1px solid white; border-radius: 5px;">
+                <b>Orari d'apertura</b> <br> Lunedì - Sabato: 10.00 - 20.00 <br> Domenica: Chiuso
+              </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.143688796315!2d12.49464311526738!3d41.86825487922289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61d7c1005677%3A0x7df1b753baddd606!2sVia%20Palos%2C%20Roma%20RM!5e0!3m2!1sit!2sit!4v1671792045909!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <footer style="margin-top: 4%;" class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4 class="titoli-f">Iscriviti alla newsletter</h4>
+                  <ul style="color: white;">
+                      <li style="width:190%;">Rimani sempre aggiornato sulle ultime promozioni o collezioni di JarmOttica! <br> Inoltre riceverai via mail uno sconto di 5€ sul tuo primo acquisto.</li>
+                      <li style="width:100%;">
+                          <div class="mb-3">
+                              <input style="margin-top: 8%;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci la tua email">
+                          </div>
+                      </li>
+                      <li style="margin-top: 7%;"> <button type="submit" class="btn btn-dark mb-3">Iscrivimi</button></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  
+              </div>
+              <div class="footer-col">
+                  <h4 class="titoli-f">Help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Contattaci</a></li>
+                      <li><a href="#">Trova Negozio</a></li>
+                      <li><a href="#">Informativa Privacy</a></li>
+                      <li><a href="#">Cookies</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4 class="titoli-f">Info</h4>
+                  <ul style="color: white;">
+                      <li>© JarmOttica s.r.l. 2022 </li>
+                      <li>P.IVA 12949250158</li>
+                      <li>Via Del Corso, 407 00186 Roma RM</li>
+                      <li>info.jarmottica@gmail.com</li>
+                      <li>Tel. 062045679</li>
+                  </ul>
+                  <div style="margin-top: 8%;" class="social-links">
+                      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+        
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
