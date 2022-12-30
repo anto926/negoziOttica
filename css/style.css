@@ -277,7 +277,20 @@ ul{
     width: 80%;
 }
 
+.bc {
+    padding-left: 4%;
+}
 
+.imgocchiali {
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+.cardocchiali {
+    border-radius: 2%;
+    border: 0px;
+    text-align: center;
+}
 
 /*css Luca*/
 
