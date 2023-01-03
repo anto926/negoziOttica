@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,63 +72,81 @@
 </div>
 </div>
 
-<!--Breadcrumb-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-9 col-sm-12 col-md-9 bc">
-      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="catalogo.html">Catalogo</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Scheda prodotto</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-</div>
-
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12 col-md-5" style="padding-top: 150px; padding-left: 60px;">
+            <div class="col-lg-6 col-sm-12 col-md-5" style="padding-top: 55px; padding-left: 60px;">
                 <img src="immagini/occhiali1.jpg" alt="occhiale" width="100%">
             </div>
             <div class="col-lg-6 col-sm-12 col-md-5">
                 <div id="descrizione" style="margin-top: 15px; padding-left: 50px;">
                     <h1 style="font-weight: bold;">Occhiale da sole RayBan, modello RB 4171.</h1>
-                    <h2>Descrizione</h2> <br>
                     <h4>
-                      Codice colore: nero <br>
-                      Questi occhiali da sole dalla forma cat-eye presentano una montatura in acetato e sono sottolineati da un logo Versace dall'ispirazione vintage in metallo traforato inciso sulle aste.<br>
-                      -  '90s Vintage Logo<br>
-                      -  Colore montatura: nero<br>
-                      -  Colore aste: dorato<br>
-                      -  Colore lenti: grigio scuro<br>
+                      Questi occhiali da sole dalla forma cat-eye presentano una montatura in acetato e sono sottolineati da un logo Versace dall'ispirazione vintage in metallo traforato inciso sulle aste.
                     </h4>
+                    <p style="font-size: 350%; color: rgb(0, 0, 0); font-weight: bold;">230€</p>
+                    <h4 style="font-weight: bold;">Vuoi ottenere uno sconto del 20%?</h4>
+                    <a target="_blank" href="coupon.html" class="btn btn-dark btn">Ottieni coupon</a> 
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 col-md-6" style="margin-left: auto; padding-left: 50px;">
-              <p style="font-size: 350%; color: rgb(0, 0, 0); font-weight: bold;">230€</p>
-              <h4 style="font-weight: bold;">Vuoi ottenere uno sconto del 20%?</h4>
-              <a target="_blank" href="coupon.html" class="btn btn-dark btn">Ottieni coupon</a> 
-            </div>
-
-            <div class="c">
-              <input type="checkbox" id="faq-1">
-              <h1><label for="faq-1" id="faq-2">SPECIFICHE</label></h1>
-              <div class="p">
-                <h5>Codice colore: nero <br>
-                  Questi occhiali da sole dalla forma cat-eye presentano una montatura in acetato e sono sottolineati da un logo Versace dall'ispirazione vintage in metallo traforato inciso sulle aste.<br>
-                  -  '90s Vintage Logo<br>
-                  -  Colore montatura: nero<br>
-                  -  Colore aste: dorato<br>
-                  -  Colore lenti: grigio scuro<br></h5>
+           
+            <div class="accordion" id="accordionExample" style="padding-left: 4%; padding-right: 4%; margin-top: 20px; margin-bottom: 20px;">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <span style="font-size: 26px;">Specifiche</span>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   <span style="font-weight: bold;">Colore:</span> nero<br>
+                   <span style="font-weight: bold;">Tipologia:</span> occhiale da sole <br>
+                   <span style="font-weight: bold;">Genere:</span> donna
+                  </div>
+                </div>
               </div>
             </div>
-    
+          </div>
 
-            <!--Prodotti correlati (da rendere responsive)-->
-            <div class="col-lg-12 col-sm-12 col-md-12">
-                <h2 style=" text-align: center; margin-top: 5px;">Altri prodotti</h2>
+            <!--Altri servizi-->
+            <div class="col-lg-12 col-sm-12 col-md-12" style="margin-top: 20px; margin-bottom: 20px;">
+              <h2 style=" text-align: center; margin-top: 15px; margin-bottom: 15px;">Scopri i nostri servizi aggiuntivi</h2>
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-sn-12 col-md-3">
+                      <div class="box">
+                          <img src="immagini/luceblu.png" width="50%" style="margin-bottom: 5%;">
+                          <h5> Protezione contro la luce blu </h5>
+                          <p> Proteggi la tua vista dalla luce blu di smartphone, tablet e laptop.</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-sn-12 col-md-3">
+                      <div class="box">
+                          <img src="immagini/fotocromatiche.png" width="50%" style="margin-bottom: 6%;">
+                          <h5> Lenti fotocromatiche </h5>
+                          <p> Proteggiti dalla luce del sole rimanendo alla moda. </p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-sn-12 col-md-3">
+                      <div class="box">
+                          <img src="immagini/antiriflesso.png" width="50%" style="margin-bottom: 5%;">
+                          <h5> Trattamento antiriflesso </h5>
+                          <p> Dì addio ai riflessi fastidiosi per una vista perfetta. </p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-sn-12 col-md-3">
+                      <div class="box">
+                          <img src="immagini/idrofobico.png" width="50%" style="margin-bottom: 5%;">
+                          <h5> Trattamento idrofobico </h5>
+                          <p> L’acqua scivola via grazie alle proprietà idrorepellenti del trattamento. </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+            <!--Prodotti correlati-->
+            <div class="col-lg-12 col-sm-12 col-md-12" style="margin-top: 20px; margin-bottom: 20px;">
+                <h2 style=" text-align: center; margin-top: 15px; margin-bottom: 15px;">Altri prodotti</h2>
               
             </div>
               <div class="container">
