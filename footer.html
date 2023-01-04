@@ -10,6 +10,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <!--favicon-->
     <link rel="icon" type="image/x-icon" href="immagini/icona.ico">
+    <style>
+        .msgavv {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <!-- footer -->
@@ -26,8 +31,10 @@
                                 <input style="margin-top: 8%;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci la tua email">
                             </div>
                         </li>
-                        <li style="margin-top: 7%;"> <button type="submit" class="btn btn-dark mb-3">Iscrivimi</button></li>
+                        <li style="margin-top: 7%;"> <button type="submit" class="btn btn-dark mb-3" id="liveAlertBtn" onclick="iscrizione()">Iscrivimi</button></li>
                     </ul>
+                    <div class="alert alert-danger alert-dismissible fade show msgavv" role="alert" id="iscf">Il campo email è vuoto<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+                    <div class="alert alert-secondary alert-dismissible fade show msgavv" role="alert" id="iscs">L'iscrizione è andata a buon fine<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
                 </div>
                 </div>
                 <div class="col-lg-1 col-sm-12 col-md-1">
@@ -66,6 +73,18 @@
         </div>
     </footer>
 
+    <script>
+        function iscrizione(){
+            let email = document.getElementById("exampleFormControlInput1").value;
+            if(email == ""){
+                document.getElementById("iscf").style.display = "block";
+                document.getElementById("iscs").style.display = "none";
+            }else{
+                document.getElementById("iscf").style.display = "none";
+                document.getElementById("iscs").style.display = "block";
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
