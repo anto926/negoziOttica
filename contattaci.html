@@ -18,6 +18,13 @@
         .form-group {
             margin-bottom: 5%;
         }
+        .spanform2 {
+          display: none;
+          color: red;
+        }
+        .avvisi{
+          display: none;
+        }
     </style>
 </head>
 <body>
@@ -96,23 +103,27 @@
 <form>
     <div id="form">
         <div class="form-group">
-            <h5>Nome*</h5> <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci nome">
+            <h5>Nome*</h5> <input type="username" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Inserisci nome">
+            <span id="messaggionome" class="spanform2">Attenzione! Devi inserire il nome</span>
           </div>
 
           <div class="form-group">
-            <h5>Cognome*</h5><input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci cognome">
+            <h5>Cognome*</h5><input type="username" class="form-control" id="cognome" aria-describedby="emailHelp" placeholder="Inserisci cognome">
+            <span id="messaggiocognome" class="spanform2">Attenzione! Devi inserire il cognome</span>
           </div>
 
           <div class="form-group">
-            <h5>Telefono</h5> <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci telefono">
+            <h5>Telefono</h5> <input type="username" class="form-control" id="telefono" aria-describedby="emailHelp" placeholder="Inserisci telefono">
           </div>
 
           <div class="form-group">
-            <h5>Email*</h5> <input type="email" placeholder="Inserisci email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <h5>Email*</h5> <input type="email" placeholder="Inserisci email" class="form-control" id="email" aria-describedby="emailHelp">
+            <span id="messaggioemail" class="spanform2">Attenzione! Devi inserire l'email</span>
           </div>
 
           <div class="form-group">
-            <h5>Messaggio*</h5> <textarea class="form-control" placeholder="Scrivi qui il tuo messaggio" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <h5>Messaggio*</h5> <textarea class="form-control" placeholder="Scrivi qui il tuo messaggio" id="messaggio" rows="3"></textarea>
+            <span id="messaggiomsg" class="spanform2">Attenzione! Devi inserire un messaggio</span>
           </div>
           <p class="small ml 2">* Campi obbligatori per aiutarci a fornire un servizio efficace</p>
 
@@ -122,9 +133,14 @@
             Accetto l'informativa sulla privacy
             </label>
           </div>
-          <button style="margin-top: 5%; margin-left: 40%;" type="submit" class="btn btn-dark">Invia</button>
+          <div id="msg"></div>
+          <button style="margin-top: 5%; margin-left: 40%;" type="button" class="btn btn-dark" id="liveAlertBtn" onclick="invia()">Invia</button>
+          <div id="messaggioerrore" style="margin-top: 10px;" class="alert alert-danger avvisi" role="alert">Non è stato possibile inviare il messaggio. Ricontrolla i campi obbligatori</div>
+          <div id="messaggioprivacy" style="margin-top: 10px;" class="alert alert-danger avvisi" role="alert">Devi accettare l'informativa sulla privacy</div>
+          <div id="messaggiosuccesso" style="margin-top: 10px;" class="alert alert-secondary avvisi" role="alert">Abbiamo ricevuto il tuo messaggio e ti ricontatteremo. Grazie!</div>
     </div>
   </form>
+
 
     <!-- footer -->
     <footer class="footer">
@@ -173,6 +189,81 @@
         </div>
     </footer>
 
+    <script>
+      event.preventDefault()
+      function invia(){
+        let nome = document.getElementById("nome").value;
+        let cognome = document.getElementById("cognome").value;
+        let email = document.getElementById("email").value;
+        let telefono = document.getElementById("telefono").value;
+        let messaggio = document.getElementById("messaggio").value;
+        let privacy = document.getElementById("flexCheckDefault");
+
+        if(nome == "") {
+            document.getElementById("messaggionome").style.display = "block";
+            document.getElementById("nome").style.border = "2px red solid";
+            document.getElementById("messaggioerrore").style.display = "block";
+            document.getElementById("messaggiosuccesso").style.display = "none";
+            document.getElementById("messaggioprivacy").style.display = "none";
+        }else{
+            document.getElementById("messaggionome").style.display = "none";
+            document.getElementById("nome").style.border = "1px black solid";
+            document.getElementById("messaggiosuccesso").style.display = "block";
+            document.getElementById("messaggioerrore").style.display = "none";
+            document.getElementById("messaggioprivacy").style.display = "none";
+        }
+
+        if(cognome == "") {
+            document.getElementById("messaggiocognome").style.display = "block";
+            document.getElementById("cognome").style.border = "2px red solid";
+            document.getElementById("messaggioerrore").style.display = "block";
+            document.getElementById("messaggiosuccesso").style.display = "none";
+            document.getElementById("messaggioprivacy").style.display = "none";
+        }else{
+            document.getElementById("messaggiocognome").style.display = "none";
+            document.getElementById("cognome").style.border = "1px black solid";
+            document.getElementById("messaggiosuccesso").style.display = "block";
+            document.getElementById("messaggioerrore").style.display = "none";
+            document.getElementById("messaggioprivacy").style.display = "none";
+        }
+
+        if(email == "") {
+            document.getElementById("messaggioemail").style.display = "block";
+            document.getElementById("email").style.border = "2px red solid";
+            document.getElementById("messaggioerrore").style.display = "block";
+            document.getElementById("messaggiosuccesso").style.display = "none";
+            document.getElementById("messaggioprivacy").style.display = "none";
+        }else{
+            document.getElementById("messaggioemail").style.display = "none";
+            document.getElementById("email").style.border = "1px black solid";
+            document.getElementById("messaggiosuccesso").style.display = "block";
+            document.getElementById("messaggioerrore").style.display = "none";
+            document.getElementById("messaggioprivacy").style.display = "none";
+        }
+        
+        if(messaggio == "") {
+            document.getElementById("messaggiomsg").style.display = "block";
+            document.getElementById("messaggio").style.border = "2px red solid";
+            document.getElementById("messaggioerrore").style.display = "block";
+            document.getElementById("messaggiosuccesso").style.display = "none";
+            document.getElementById("messaggioprivacy").style.display = "none";
+        }else{
+            document.getElementById("messaggiomsg").style.display = "none";
+            document.getElementById("messaggio").style.border = "1px black solid";
+            document.getElementById("messaggiosuccesso").style.display = "block";
+            document.getElementById("messaggioerrore").style.display = "none";
+            document.getElementById("messaggioprivacy").style.display = "none";
+        }
+
+        if(privacy.checked){
+          document.getElementById("messaggioprivacy").style.display = "none";
+        }else{
+          document.getElementById("messaggioprivacy").style.display = "block";
+          document.getElementById("messaggiosuccesso").style.display = "none";
+        }
+      }
+  
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
