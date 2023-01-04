@@ -19,6 +19,10 @@
         .form-group {
             margin-bottom: 5%;
         }
+        .spanform {
+          display: none;
+          color: red;
+        }
     </style>
 </head>
 
@@ -72,12 +76,14 @@
             <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>
                 <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci username">
+                <span id="messaggioemail" class="spanform">Attenzione! Username assente o errato</span>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Inserisci password">
+                <span id="messaggiopassword" class="spanform">Attenzione! Password assente o errata</span>
               </div>
-              <button style="margin-top: 2%; margin-left: 40%;" type="submit" class="btn btn-dark">Accedi</button>
+              <button style="margin-top: 2%; margin-left: 40%;" type="submit" class="btn btn-dark" onclick="accedi()">Accedi</button>
         </div>
       </form>
 
@@ -128,6 +134,30 @@
           </div>
       </div>
   </footer>
+
+  <script>
+    function accedi(){
+            event.preventDefault()
+            let username = document.getElementById("exampleInputEmail1").value;
+            let password = document.getElementById("exampleInputPassword1").value;
+
+            if(username == "" || username != "admin") {
+                document.getElementById("messaggioemail").style.display = "block";
+                document.getElementById("exampleInputEmail1").style.border = "2px red solid";
+            }else{
+                document.getElementById("messaggioemail").style.display = "none";
+                document.getElementById("exampleInputEmail1").style.border = "1px black solid";
+            }
+
+            if(password == "" || password != "admin") {
+                document.getElementById("messaggiopassword").style.display = "block";
+                document.getElementById("exampleInputPassword1").style.border = "2px red solid";
+            }else{
+                document.getElementById("messaggiopassword").style.display = "none";
+                document.getElementById("exampleInputPassword1").style.border = "1px black solid";
+            }
+        }
+  </script>
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
