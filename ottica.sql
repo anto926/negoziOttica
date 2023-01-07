@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Gen 07, 2023 alle 16:06
+-- Creato il: Gen 07, 2023 alle 16:38
 -- Versione del server: 10.4.25-MariaDB
 -- Versione PHP: 8.1.10
 
@@ -44,7 +44,7 @@ CREATE TABLE `occhiale` (
 --
 
 INSERT INTO `occhiale` (`id`, `marca`, `modello`, `descrizione`, `materiale`, `tipologia`, `genere`, `colore`, `prezzo`) VALUES
-(1, 'Ray-Ban', 'RB6275', 'Stile, autenticità, libertà di espressione, qualità e funzionalità sono i valori chiave di Ray-Ban, da generazioni leader dellocchialeria da sole e da vista.\r\n\r\nScegli il tuo stile Ray-Ban e scopri il modello RB6275 Optics\r\n\r\nGenere: unisex\r\nColore della montatura: gunmetal\r\nMateriale della montatura: metallo\r\nForma: rettangolare\r\nTipo di montatura: cerchio intero\r\nColore delle lenti: trasparente\r\nTrattamenti: lente demo\r\n\r\nVestibilità e caratteristiche della montatura\r\n\r\nVestibilità stretta.\r\n', 'Metallo', 'Da vista', 'Da uomo', 'Nero', 155),
+(1, 'Ray-Ban', 'RB6275', 'Stile, autenticità, libertà di espressione, qualità e funzionalità sono i valori chiave di Ray-Ban, da generazioni leader dellocchialeria da sole e da vista.\r\n\r\nScegli il tuo stile Ray-Ban e scopri il modello RB6275 Optics\r\n\r\nGenere: unisex\r\nColore della montatura: gunmetal\r\nMateriale della montatura: metallo\r\nForma: rettangolare\r\nTipo di montatura: cerchio intero\r\nColore delle lenti: trasparente\r\nTrattamenti: lente demo\r\n\r\nVestibilità e caratteristiche della montatura\r\n\r\nVestibilità stretta.\r\n', 'metallo', 'da vista', 'uomo', 'Nero', 155),
 (2, 'Persol', 'PO3263V', 'Persol è il marchio leggendario degli occhiali Made in Italy. Il suo nome evocativo, derivato da \"per il sole\", identifica un occhiale che eredita e conserva una cultura di eccellenza, di manifattura artigianale e di alchimia perfetta tra estetica e tecnologia.\n\nScegli il tuo stile Persol e scopri il modello PO3263V\n\nGenere: unisex\nColore della montatura: nero\nMateriale della montatura: acetato\nForma: squadrata\nTipo di montatura: cerchio intero\nColore delle lenti: lente demo\nTrattamenti: lente demo\n\nVestibilità e caratteristiche della montatura\n\nVestibilità standard.', 'plastica', 'da vista', 'unisex', 'nero', 210),
 (3, 'Ray-Ban', 'RB2180V', 'Stile, autenticità, libertà di espressione, qualità e funzionalità sono i valori chiave di Ray-Ban, da generazioni leader dell’occhialeria da sole e da vista.\n\nScegli il tuo stile Ray-Ban e scopri il modello RB2180V Optics\n\nGenere: unisex\nColore della montatura: havana scuro\nMateriale della montatura: acetato\nForma: phantos\nTipo di montatura: cerchio intero\nColore delle lenti: trasparente\nTrattamenti: lente demo\n\nVestibilità e caratteristiche della montatura\n\nVestibilità standard.\n', 'plastica', 'da vista', 'unisex', 'multicolore', 135),
 (4, 'Persol', 'PO3007V', 'Persol è il marchio leggendario degli occhiali Made in Italy. Il suo nome evocativo, derivato da “per il sole”, identifica un occhiale che eredita e conserva una cultura di eccellenza, di manifattura artigianale e di alchimia perfetta tra estetica e tecnologia.\r\n\r\nScegli il tuo stile Persol e scopri il modello PO3007V\r\n\r\nGenere: uomo\r\nColore della montatura: nero\r\nMateriale della montatura: acetato\r\nForma: squadrata\r\nTipo di montatura: cerchio intero\r\nColore delle lenti: lente demo\r\nTrattamenti: lente demo\r\n\r\nVestibilità e caratteristiche della montatura\r\n\r\nVestibilità stretta.\r\n', 'plastica', 'da vista', 'uomo', 'nero', 200),
@@ -64,11 +64,11 @@ INSERT INTO `occhiale` (`id`, `marca`, `modello`, `descrizione`, `materiale`, `t
 (18, 'Bvlgari', 'BV1109', 'Il marchio si colloca nel segmento più alto dell\'occhialeria-gioiello grazie all\'artigianalità italiana, al design audace e all\'utilizzo di materiali pregiati quali oro e pietre colorate, oltre ai cristalli, applicati su creazioni esclusive e senza tempo.\n\nScegli il tuo stile Bvlgari e scopri il modello BV1109\n\nGenere: uomo\nColore della montatura: gunmetal, gunmetal/nero opaco\nMateriale della montatura: metallo\nForma: rettangolare\nTipo di montatura: cerchio intero\nColore delle lenti: lente demo\nTrattamenti: lente demo\n\nVestibilità e caratteristiche della montatura\n\nVestibilità stretta.\n', 'metallo', 'da vista', 'uomo', 'grigio', 260),
 (19, 'Bvlgari', 'BV1113', 'Il marchio si colloca nel segmento più alto dell\'occhialeria-gioiello grazie all\'artigianalità italiana, al design audace e all\'utilizzo di materiali pregiati quali oro e pietre colorate, oltre ai cristalli, applicati su creazioni esclusive e senza tempo.\nScegli il tuo stile Bvlgari e scopri il modello BV1113\n\nGenere: uomo\nColore della montatura: argento opaco/blu, argento opaco\nMateriale della montatura: metallo\nForma: rettangolare\nTipo di montatura: cerchio intero\nColore delle lenti: lente demo\nTrattamenti: lente demo\n\nVestibilità e caratteristiche della montatura\n\nVestibilità stretta.\n', 'metallo', 'da vista', 'uomo', 'blu', 260),
 (20, 'Burberry', 'BE2301', 'Il brand fondato nel 1856 è diventato protagonista della storia inglese, accompagnando le grandi imprese dei sudditi di sua Maestà con classe ed eleganza. Burberry in oltre 150 anni di attività ha mantenuto inalterate queste caratteristiche, che si esprimono appieno nelle collezioni di occhiali, linee e forme innovative, che mantengono inalterato l’antico prestigio.\r\n\r\nScegli il tuo stile Burberry e scopri il modello BE2301\r\n\r\nGenere: donna\r\nColore della montatura: top nero/stampa tb rossa/beige\r\nMateriale della montatura: acetato\r\nForma: squadrata\r\nTipo di montatura: cerchio intero\r\nColore delle lenti: lente demo\r\n\r\nVestibilità e caratteristiche della montatura\r\n\r\nVestibilità standard.\r\n', 'plastica', 'da vista', 'donna', 'multicolore', 201),
-(21, 'XYLOMIA', 'XYLADM30', 'Bellissimi occhiali di legno', 'Legno', 'da sole', 'Da uomo', 'Marrone', 130),
-(22, 'XYLOMIA', 'XYLA32MD', 'Bellissimo occhiale di legno da sole', 'Legno', 'da vista', 'Unisex', 'Marrone', 80),
-(23, 'Oakley', 'XY432TD', 'Belissimo occhiale di legno', 'Legno', 'da sole', 'Da donna', 'Marrone', 86),
-(24, 'XYLOMIA', 'XY543SF', 'Bellissimi occhiali', 'Legno', 'da vista', 'Unisex', 'Marrone', 95),
-(25, 'Oakley', 'OAK201', 'Bellissimi occhiali da sole', 'Legno', 'da sole', 'Da uomo', 'Marrone', 70);
+(21, 'XYLOMIA', 'XYLADM30', 'Bellissimi occhiali di legno', 'Legno', 'da sole', 'uomo', 'Marrone', 130),
+(22, 'XYLOMIA', 'XYLA32MD', 'Bellissimo occhiale di legno da sole', 'Legno', 'da vista', 'unisex', 'Marrone', 80),
+(23, 'Oakley', 'XY432TD', 'Belissimo occhiale di legno', 'Legno', 'da sole', 'donna', 'Marrone', 86),
+(24, 'XYLOMIA', 'XY543SF', 'Bellissimi occhiali', 'Legno', 'da vista', 'unisex', 'Marrone', 95),
+(25, 'Oakley', 'OAK201', 'Bellissimi occhiali da sole', 'Legno', 'da sole', 'uomo', 'Marrone', 70);
 
 -- --------------------------------------------------------
 
