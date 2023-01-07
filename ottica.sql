@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Gen 07, 2023 alle 15:52
+-- Creato il: Gen 07, 2023 alle 16:06
 -- Versione del server: 10.4.25-MariaDB
 -- Versione PHP: 8.1.10
 
@@ -120,7 +120,7 @@ ALTER TABLE `utente`
 -- AUTO_INCREMENT per la tabella `occhiale`
 --
 ALTER TABLE `occhiale`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT per la tabella `utente`
